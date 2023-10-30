@@ -1,0 +1,52 @@
+[package]
+name = "wgpu_terrain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.17.1"
+cgmath = "0.18"
+env_logger = "0.10"
+futures = "0.3"
+gfx-hal = "0.9"
+image = "0.23"
+log = "0.4"
+pollster = "0.2"
+winit = "0.28" 
+anyhow = "1.0"
+rand = "0.8"
+noise = "0.8"
+bytemuck = { version = "1.13", features = ["derive"] }
+wgpu_simplified = { git = "https://github.com/jack1232/wgpu_simplified" }
+
+[[example]]
+name = "terrain_cpu"
+path = "examples/ch01/terrain_cpu.rs"
+
+[[example]]
+name = "terrain_water_level"
+path = "examples/ch01/terrain_water_level.rs"
+
+[[example]]
+name = "terrain_animation"
+path = "examples/ch01/terrain_animation.rs"
+
+[[example]]
+name = "terrain_chunk"
+path = "examples/ch02/terrain_chunk.rs"
+
+[[example]]
+name = "terrain_instance"
+path = "examples/ch02/terrain_instance.rs"
+
+[[example]]
+name = "terrain_multiple_chunks"
+path = "examples/ch02/terrain_multiple_chunks.rs"
+
+[[example]]
+name = "terrain_gpu"
+path = "examples/ch03/terrain_gpu.rs"
+
+[[example]]
+name = "minecraft_gpu"
+path = "examples/ch03/minecraft_gpu.rs"
